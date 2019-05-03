@@ -1,27 +1,18 @@
 package com.company;
-
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args){
-        for(int i =1;i<=10;i*=5){
-            System.out.println(i);
-        }
-        boolean j=true;
-        int k=0;
-        while(j){
-            System.out.println(k);
-            k+=2;
-            if (k>20)
-                j=false;
-        }
-        int z=0;
-        do{
-          z++;
-          System.out.println("Hello");
-        } while(z<1);
-
-
-
+       int n;
+       int [] a;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter numbers of array:");
+        n = in.nextInt();
+        a = new int [n];
+        for(int i = 0;i < n; i++){
+            System.out.print("Enter a["+ i +"] = ");
+            a[i] = in.nextInt();
         }
     }
+}
