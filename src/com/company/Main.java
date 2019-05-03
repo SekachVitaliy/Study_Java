@@ -1,21 +1,27 @@
 package com.company;
-import java.util.Scanner;
 
 
 public class Main {
 
     public static void main(String[] args){
-        Scanner num = new Scanner(System.in);
-        System.out.print("Enter the number:");
-        int first;
-        first = num.nextInt();
-        switch(first){
-            case 3: System.out.print("3"); break;
-            case 7: System.out.print("7"); break;
-            default: System.out.print("Something else");
-
-
-
+        for(int i =1;i<=10;i*=5){
+            System.out.println(i);
         }
+        boolean j=true;
+        int k=0;
+        while(j){
+            System.out.println(k);
+            k+=2;
+            if (k>20)
+                j=false;
+        }
+        int z=0;
+        do{
+          z++;
+          System.out.println("Hello");
+        } while(z<1);
+
+
+
         }
     }
