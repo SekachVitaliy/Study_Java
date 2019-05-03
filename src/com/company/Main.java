@@ -6,12 +6,16 @@ public class Main {
 
     public static void main(String[] args){
         Scanner num = new Scanner(System.in);
-        int first,second,result;
-        System.out.print("First number:");
+        int first,second=50;
+        System.out.print("Enter the number:");
         first = num.nextInt();
-        System.out.print("Second number:");
-        second = num.nextInt();
-        result=first + second;
-        System.out.println(first+"+"+second+"="+result);
+
+        if(first >= second){
+            System.out.print("Num");
+        } else if (first == 45)
+            System.out.print("Number is equel 45");
+        else{
+            System.out.print("Number is lower than "+second);
+             }
+        }
     }
-}
