@@ -1,24 +1,26 @@
 package com.company;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args){
-       int n;
-       int max;
-       int [] a;
+        write_array();
+
+    }
+    public static int[] write_array() {
+        int n;
+        int array[];
+        System.out.print("Enter bit depth : ");
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter numbers of array:");
         n = in.nextInt();
-        a = new int [n];
-        for(int i = 0;i < n; i++){
-            System.out.print("Enter a["+ i +"] = ");
-            a[i] = in.nextInt();
-        }max=a[0];
-        for(int i=1;i<n;i++){
-            if(max<a[i])
-                max=a[i];
-         }
-        System.out.println(max);
+        array = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter the number ["+ (i+1) +"]-");
+            array[i] = in.nextInt();
+        }
+        return array;
+
+
     }
 }
