@@ -5,11 +5,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-        Shape[] arr = new Shape[] {new Triangles(),new Square(),new Circle()};
-        for(int i = 0;i < arr.length;i++){
-           arr[i].draw();
 
-        }
+        Computer comp = new Computer();
+        comp.I7.start();
+        comp.Transend.start();
+        comp.Transend.shutdown();
+        comp.I7.shutdown();
+
+        new Computer(){
+            void supercomp() {
+                this.I7.shutdown();
+                this.I7.shutdown();
+            }
+
+        };
+
     }
 
 
