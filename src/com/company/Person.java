@@ -18,7 +18,7 @@ package com.company;
          name = j;
      }
 
-
+     public Person() {}
 
 
      }

@@ -10,7 +10,12 @@ public class Main {
         Vlad.say("Sasha");
         Sasha.say("Vald");
         Vlad.height =145 ;
-        System.out.print(Sasha.name+"'s height "+ Sasha.height+"sm");
+        System.out.println(Sasha.name+"'s height "+ Sasha.height+"sm");
+        System.out.println();
+        Student Freshman = new Student(175,"Viktor",4);
+        Freshman.tell();
+        Student  Fresh  =new Student(195,"Vlad",5);
+        Fresh.tell();
 
     }
 
