@@ -1,26 +1,17 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
-
-    public static void main(String[] args){
-
-        Computer comp = new Computer();
-        comp.I7.start();
-        comp.Transend.start();
-        comp.Transend.shutdown();
-        comp.I7.shutdown();
-
-        new Computer(){
-            void supercomp() {
-                this.I7.shutdown();
-                this.I7.shutdown();
-            }
-
-        };
+    public static int summ (int a,int b) {
+        return a+b;
+    }
+    public static int summ (int a,int b,int c) {
+        return a+b+c;
+    }
+    public static float summ (float a,float b) {
+        return a+b;
+    }
+    public static void main(String[] args) {
+        System.out.print(summ(45,45,23));
 
     }
-
-
 }
